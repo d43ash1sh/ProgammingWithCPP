@@ -14,12 +14,12 @@ public:
 };
 void Time::input(int a, int b, int c)
 {
-    if (c >= 60)
+    while (c >= 60)
     {
         c = c - 60;
         b = b + 1;
     }
-    if (b >= 60)
+    while (b >= 60)
     {
         b = b - 60;
         a = a + 1;
@@ -38,10 +38,13 @@ void Time::output()
 
 int main()
 {
-    Time c1, c2;
-    c1.input(1, 2, 60);
+    Time c1, c2, c3;
+    c1.input(1, 2, 150);
     c1.output();
     c2.input(4, 65, 6);
     c2.output();
+
+    c3 = c1 + c2;
+    c3.output();
     return 0;
 }
