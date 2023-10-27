@@ -35,5 +35,3 @@ int main()
     c.getcount();
     return 0;
 }
-
-// write a c++ program to save the cgpa and sgpa info of each sem. using a class called 'semester' and static data member
